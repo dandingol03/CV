@@ -15,6 +15,7 @@ if (!String.prototype.format) {
 jQuery(document).ready(function($) {
     $(".left-label").attr('contenteditable', 'true');
     $(".label-value").attr('contenteditable', 'true');
+    $(".label").attr('contenteditable', 'true');
     $(".info-title").attr('contenteditable', 'true');
     $("h3").attr('contenteditable', 'true');
     $("p").attr('contenteditable', 'true');
