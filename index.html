@@ -45,7 +45,7 @@
                         <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">1291248710@qq.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     
                     <li>
-                        <label class="left-label" contenteditable="true">Github</label><span class="label-value" contenteditable="true">github.com/dandingol03</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true" style="font-weight: bold">Github</label><span class="label-value" contenteditable="true" style="font-weight:bold">github.com/dandingol03</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
 
@@ -157,63 +157,110 @@
                 <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
                 <hr>
                 <ul class="experience-list">
+                    
                     <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br/>
+                        <h3>羽毛球热手机App开发 (2017/05-至今)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">1.手机框架的搭建与集成，后台node.js服务器的编写</li>
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">2.负责开发和完善羽毛球比赛直播的功能</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        <span style=" text-indent: 10px;margin-top: 5px;">1.业务 :</span>
+                        <p style="text-indent:10px;margin-top:2px;">
+                            该App主要针对羽毛球爱好者和羽毛球教练进行开发.采用react-native架构进行开发。具体业务包括创建和报名羽毛球培训课程，发起群活动，直播比赛赛事等。
+                        </p>
+                        <span style=" text-indent: 10px;margin-top: 5px;">2.直播部分 :</span>
+                        <p style="text-indent:10px;margin-top:2px;">
+                            先前该App通过购买七牛云服务完成赛事直播，后因实验室考虑构建自己的直播架构,由我进行技术调研和开发。最终采用rtmp+nginx的架构进行羽毛球教学或赛事的直播。Android部分的推流端采用MediaCodeC进行硬编,服务器部分采用nginx+nginx-rtmp-module,视频部分采用H264协议进行压缩,直播的客户端采用ijkplayer进行软解.比赛直播最大并发人数可达100多人.
                         </p>
                     </li>
                     <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <h3>北京护路办项目 项目负责人 (2018/05-2018/10)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">1.负责北京护路办项目的即时通讯功能开发和广播柱硬件的udp接口集成</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        <p style="text-indent:15px;margin-top:2px;">
+                            1.即时通讯的功能点主要可划分为消息和文件转发以及视频通话。包含pc端、Android手机端以及nodejs服务器.nodejs作为socket服务器,提供socket连接及转发socket消息。
+                            同时,nodejs服务器也作为视频通话的信令服务器,转发视频通话收发两端的媒体数据、网络信息,以便收发两端完成webrtc的握手
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                                2.pc端具有发送文本消息和文件的功能。当pc端发送socket消息后,采用indexeddb在本地缓存消息,而针对文件,则是在服务器上进行缓存.同时,pc端采用定时器来进行socket的重连服务.
+                                视频通话方面,pc端采用getUserMedia获取本地的音视频流和摄像头数据.        
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                                3.Android端也具有发送文本和消息的功能。目前采用cordova+h5的方式实现视频通话.
                         </p>
                     </li>
                     <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <h3>青海机关内控App开发 项目负责人 (2018/06-2018/09)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">1.负责android端的开发</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        <span style=" text-indent: 15px;margin-top: 5px;">1.业务 :</span>
+                        <p style="text-indent:15px;margin-top:2px;">
+                                该app为青海内控的各种申请、审核服务。申请可划分为办公申请、差旅申请、培训申请、会议申请、差旅申请、出国申请和报销申请。申请流程中可以指派申请的支出事项、经费、出差地点等。申请完成后会显示在app的未完成分页，审核通过后，该项申请会显示在历史分页。审核业务，主要分为普通申请审核和报销审核，普通申请审核主要针对申请本身，比如出差、培训等。而报销审核针对报销的经费和事由进行审核。同时，在我的主页显示当时申请的大致情况，根据未提交、正在审核、已完成状态进行区分。
                         </p>
                     </li>
                     <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <h3>捷惠保手机App开发 项目负责人 (2016/09-2017/02)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">1.负责手机框架的选型和集成</li>
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">2.与客户进行需求沟通,了解后转变为具体业务实现</li>
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">3.主导开发工作的分配和业务编写</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        <span style=" text-indent: 15px;margin-top: 5px;">1.业务 :</span>
+                        <p style="text-indent:15px;margin-top:2px;">
+                            捷惠保app。旨在为保险业务所服务。该app提供车险下单、寿险下单、维修服务等功能。采用react-native框架进行开发,集成百度语音、百度地图,后端采用nodejs                                
                         </p>
                     </li>
+
+                    <li>
+                        <h3>西班牙超市商品管理app开发 业务开发 (2017/01-2017/03)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">负责手机框架端选型和组件集成.</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        <p style="text-indent:15px;margin-top:2px;">
+                            对超市商品进行管理的信息管理系统的手机平台.包括对商品信息的增删改查,分组管理,扫码查询,价格调查等
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                            采用react-native加reducer的框架组合进行业务开发
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于react-native的原型设计工具 毕设 (2017/02-2018/01)</h3>
+                        <span class="bold">职责描述 :</span>
+                        <ul style="padding-left:15px">
+                            <li style="list-style:none;margin-bottom: 5px;margin-top: 5px;">1.主导并开发基于react-native的原型设计工具</li>
+                        </ul>
+                        <span class="bold">项目简介 :</span><br/>
+                        
+                        <p style="text-indent:15px;margin-top:2px;">
+                            该工具可以内部集成图形界面系统，开发人员可以通过通过此系统完成react-native的界面构筑
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                            向开发人员提供组件库列表，开发人员可以通过简单的组件拖拽完成代码生成，同时组件库列表作为团队共享组件信息的媒介，开发人员可以自由参与维护并上传
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                                具备ide的基本功能
+                        </p>
+                        <p style="text-indent:15px;margin-top:2px;">
+                                集成git同步系统，辅助开发人员完成代码提交等同步操 作
+                        </p>
+                    </li>
+   
                 </ul>
             </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+         
+           
         </div>
     </div>
 </body>
